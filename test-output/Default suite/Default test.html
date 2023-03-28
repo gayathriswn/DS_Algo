@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>44/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>115/15/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 23 16:34:15 CDT 2023</td>
+<td>Started on:</td><td>Tue Mar 28 00:41:03 CDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>72 seconds (72053 ms)</td>
+<tr><td>Total time:</td><td>354 seconds (354431 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,825 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for terminologies page", "graph"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=9f7231d4-328e-495b-98f6-19f428d16b1b, value=[Ljava.lang.CharSequence;@14ef94ec}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@82ea5a93 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Tree.the_user_enters_valid_python_code_in_editor_from_tree_page(Tree.java:56)
+	at ✽.The user enters valid python code in Editor from tree page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/91Tree.feature:70)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1850773936", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1850773936'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=9f7231d4-328e-495b-98f6-19f428d16b1b, value=[Ljava.lang.CharSequence;@14ef94ec}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@82ea5a93 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Tree.the_user_enters_valid_python_code_in_editor_from_tree_page(Tree.java:56)
+	at ✽.The user enters valid python code in Editor from tree page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/91Tree.feature:70)
+</pre></div></td>
+<td>6</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for queue page", "Queue"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=fce4630b-2064-4d1d-b4fb-d371c3f1d7ae, value=[Ljava.lang.CharSequence;@79860b25}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@e23d146f -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Queue.the_user_enters_valid_python_code_in_editor_from_queue_page(Queue.java:40)
+	at ✽.The user enters valid python code in Editor from queue page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/82Queue.feature:27)
+</pre></div><a href='#' onClick='toggleBox("stack-trace985702370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace985702370'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=fce4630b-2064-4d1d-b4fb-d371c3f1d7ae, value=[Ljava.lang.CharSequence;@79860b25}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@e23d146f -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Queue.the_user_enters_valid_python_code_in_editor_from_queue_page(Queue.java:40)
+	at ✽.The user enters valid python code in Editor from queue page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/82Queue.feature:27)
+</pre></div></td>
+<td>5</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for terminologies page", "graph"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=316490c0-0206-4118-8a78-8dd1d3bda16d, value=[Ljava.lang.CharSequence;@5d1b4556}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@c868245a -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Tree.the_user_enters_invalid_python_code_in_editor_from_tree_page(Tree.java:60)
+	at ✽.The user enters invalid python code in Editor from tree page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/91Tree.feature:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace242335122", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace242335122'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=316490c0-0206-4118-8a78-8dd1d3bda16d, value=[Ljava.lang.CharSequence;@5d1b4556}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@c868245a -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Tree.the_user_enters_invalid_python_code_in_editor_from_tree_page(Tree.java:60)
+	at ✽.The user enters invalid python code in Editor from tree page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/91Tree.feature:81)
+</pre></div></td>
+<td>6</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for stack page", "Stack"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=d94e167f-5fe2-4152-92bf-a8ec780a374a, value=[Ljava.lang.CharSequence;@19f19f89}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@fc6bb651 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Stack.the_user_enters_invalid_python_code_in_editor_from_stack_page(Stack.java:45)
+	at ✽.The user enters invalid python code in Editor from stack page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/81Stack.feature:38)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1919134982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1919134982'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=d94e167f-5fe2-4152-92bf-a8ec780a374a, value=[Ljava.lang.CharSequence;@19f19f89}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@fc6bb651 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Stack.the_user_enters_invalid_python_code_in_editor_from_stack_page(Stack.java:45)
+	at ✽.The user enters invalid python code in Editor from stack page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/81Stack.feature:38)
+</pre></div></td>
+<td>6</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Implementation page", "Stack"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=d08cf664-cf36-4214-9c2b-2939a83e5521, value=[Ljava.lang.CharSequence;@6ce07db6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@ea2fa33b -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Stack.the_user_enters_invalid_python_code_in_editor_from_stack_page(Stack.java:45)
+	at ✽.The user enters invalid python code in Editor from stack page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/81Stack.feature:71)
+</pre></div><a href='#' onClick='toggleBox("stack-trace609570834", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace609570834'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=d08cf664-cf36-4214-9c2b-2939a83e5521, value=[Ljava.lang.CharSequence;@6ce07db6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@ea2fa33b -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Stack.the_user_enters_invalid_python_code_in_editor_from_stack_page(Stack.java:45)
+	at ✽.The user enters invalid python code in Editor from stack page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/81Stack.feature:71)
+</pre></div></td>
+<td>5</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Graph Representations page", "graph"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=59d283a0-9398-41e2-856d-14379cb94545, value=[Ljava.lang.CharSequence;@123a0b95}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@3b1355cc -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Graph.the_user_enters_invalid_python_code_in_editor_from_graph_page(Graph.java:75)
+	at ✽.The user enters invalid python code in Editor from graph page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/92Graph.feature:71)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1596306253", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1596306253'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=59d283a0-9398-41e2-856d-14379cb94545, value=[Ljava.lang.CharSequence;@123a0b95}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@3b1355cc -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Graph.the_user_enters_invalid_python_code_in_editor_from_graph_page(Graph.java:75)
+	at ✽.The user enters invalid python code in Editor from graph page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/92Graph.feature:71)
+</pre></div></td>
+<td>6</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Graph page", "graph"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=fdf20e1f-a76c-435f-b3ef-1f2b81b46b96, value=[Ljava.lang.CharSequence;@7f05d2bf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@e1fcd8c8 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Graph.the_user_enters_valid_python_code_in_editor_from_graph_page(Graph.java:71)
+	at ✽.The user enters valid python code in Editor from graph page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/92Graph.feature:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace571721982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace571721982'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=fdf20e1f-a76c-435f-b3ef-1f2b81b46b96, value=[Ljava.lang.CharSequence;@7f05d2bf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@e1fcd8c8 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Graph.the_user_enters_valid_python_code_in_editor_from_graph_page(Graph.java:71)
+	at ✽.The user enters valid python code in Editor from graph page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/92Graph.feature:28)
+</pre></div></td>
+<td>5</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for overview of trees page", "graph"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=d22a8589-83c1-40e2-8dfc-85a6a7d9a3b2, value=[Ljava.lang.CharSequence;@532f568e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@98f06a91 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Tree.the_user_enters_valid_python_code_in_editor_from_tree_page(Tree.java:56)
+	at ✽.The user enters valid python code in Editor from tree page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/91Tree.feature:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1615874494", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1615874494'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=d22a8589-83c1-40e2-8dfc-85a6a7d9a3b2, value=[Ljava.lang.CharSequence;@532f568e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@98f06a91 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Tree.the_user_enters_valid_python_code_in_editor_from_tree_page(Tree.java:56)
+	at ✽.The user enters valid python code in Editor from tree page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/91Tree.feature:28)
+</pre></div></td>
+<td>6</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Implementation page", "Stack"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=e8e0276b-8b58-4655-86f1-49a614d70d3e, value=[Ljava.lang.CharSequence;@189d8bef}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@5917ab51 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Stack.the_user_enters_valid_python_code_in_editor_from_stack_page(Stack.java:41)
+	at ✽.The user enters valid python code in Editor from stack page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/81Stack.feature:61)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1276306013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1276306013'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=e8e0276b-8b58-4655-86f1-49a614d70d3e, value=[Ljava.lang.CharSequence;@189d8bef}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@5917ab51 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Stack.the_user_enters_valid_python_code_in_editor_from_stack_page(Stack.java:41)
+	at ✽.The user enters valid python code in Editor from stack page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/81Stack.feature:61)
+</pre></div></td>
+<td>5</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for queue page", "Queue"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=97fa2391-652d-4aad-9fc6-5127fd02692d, value=[Ljava.lang.CharSequence;@2e1a8c1a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@e56ffd87 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Queue.the_user_enters_invalid_python_code_in_editor_from_queue_page(Queue.java:44)
+	at ✽.The user enters invalid python code in Editor from queue page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/82Queue.feature:38)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1997366722", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1997366722'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=97fa2391-652d-4aad-9fc6-5127fd02692d, value=[Ljava.lang.CharSequence;@2e1a8c1a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@e56ffd87 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Queue.the_user_enters_invalid_python_code_in_editor_from_queue_page(Queue.java:44)
+	at ✽.The user enters invalid python code in Editor from queue page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/82Queue.feature:38)
+</pre></div></td>
+<td>5</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Graph page", "graph"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=6a7bdd24-d77a-4508-a86c-0adc624a2f7d, value=[Ljava.lang.CharSequence;@9478683}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@1965e3a -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Graph.the_user_enters_invalid_python_code_in_editor_from_graph_page(Graph.java:75)
+	at ✽.The user enters invalid python code in Editor from graph page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/92Graph.feature:39)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1785733985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1785733985'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=6a7bdd24-d77a-4508-a86c-0adc624a2f7d, value=[Ljava.lang.CharSequence;@9478683}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@1965e3a -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Graph.the_user_enters_invalid_python_code_in_editor_from_graph_page(Graph.java:75)
+	at ✽.The user enters invalid python code in Editor from graph page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/92Graph.feature:39)
+</pre></div></td>
+<td>5</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Implementation using collections.deque  page", "Queue"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=e9b333dc-6e1d-4090-9854-63471da7c169, value=[Ljava.lang.CharSequence;@774cc4a9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@c1f45771 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Queue.the_user_enters_invalid_python_code_in_editor_from_queue_page(Queue.java:44)
+	at ✽.The user enters invalid python code in Editor from queue page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/82Queue.feature:71)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1948764372", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1948764372'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=e9b333dc-6e1d-4090-9854-63471da7c169, value=[Ljava.lang.CharSequence;@774cc4a9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@c1f45771 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Queue.the_user_enters_invalid_python_code_in_editor_from_queue_page(Queue.java:44)
+	at ✽.The user enters invalid python code in Editor from queue page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/82Queue.feature:71)
+</pre></div></td>
+<td>6</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Implementation using collections.deque page", "Queue"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=6aea87a0-9ac8-4840-8045-91794abc1bf8, value=[Ljava.lang.CharSequence;@5243ce45}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@4ecac78a -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Queue.the_user_enters_valid_python_code_in_editor_from_queue_page(Queue.java:40)
+	at ✽.The user enters valid python code in Editor from queue page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/82Queue.feature:61)
+</pre></div><a href='#' onClick='toggleBox("stack-trace242520397", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace242520397'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=6aea87a0-9ac8-4840-8045-91794abc1bf8, value=[Ljava.lang.CharSequence;@5243ce45}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@4ecac78a -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Queue.the_user_enters_valid_python_code_in_editor_from_queue_page(Queue.java:40)
+	at ✽.The user enters valid python code in Editor from queue page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/82Queue.feature:61)
+</pre></div></td>
+<td>5</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for overview of trees page", "graph"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=f0db5322-7409-458f-8e8e-efb42cc935a4, value=[Ljava.lang.CharSequence;@43ec61f0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@45997c4 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Tree.the_user_enters_invalid_python_code_in_editor_from_tree_page(Tree.java:60)
+	at ✽.The user enters invalid python code in Editor from tree page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/91Tree.feature:39)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2102026771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2102026771'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=f0db5322-7409-458f-8e8e-efb42cc935a4, value=[Ljava.lang.CharSequence;@43ec61f0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@45997c4 -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Tree.the_user_enters_invalid_python_code_in_editor_from_tree_page(Tree.java:60)
+	at ✽.The user enters invalid python code in Editor from tree page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/91Tree.feature:39)
+</pre></div></td>
+<td>5</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Graph Representations page", "graph"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=1619493b-1703-484a-b19d-692f4c0a1599, value=[Ljava.lang.CharSequence;@3a1d3fed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@f3dea7ca -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Graph.the_user_enters_valid_python_code_in_editor_from_graph_page(Graph.java:71)
+	at ✽.The user enters valid python code in Editor from graph page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/92Graph.feature:61)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1839167654", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1839167654'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=111.0.5563.111)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f23108be3d12d203f64037ec7fe8dc97, sendKeysToElement {id=1619493b-1703-484a-b19d-692f4c0a1599, value=[Ljava.lang.CharSequence;@3a1d3fed}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gayat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54553/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [org.openqa.selenium.remote.RemoteWebElement@f3dea7ca -&gt; unknown locator]
+Session ID: f23108be3d12d203f64037ec7fe8dc97
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at StepDefinition.Base.EnterCode(Base.java:132)
+	at StepDefinition.Graph.the_user_enters_valid_python_code_in_editor_from_graph_page(Graph.java:71)
+	at ✽.The user enters valid python code in Editor from graph page(file:///C:/Users/gayat/eclipse-workspace/DS_Algo_final/src/test/resources/features/92Graph.feature:61)
+</pre></div></td>
+<td>5</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,225 +895,580 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user tests sign in functionality with empty username textbox", "Test ds_algo portal sign in page"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to graph page and click on Graph Representations link", "graph"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Arrays in Python page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>2</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Introduction Page", "Test Linked List page in ds_algo portal"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to graph representations page and click on Practice Questions", "graph"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User registers successfully", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Operations in Stack page", "Stack"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Introduction page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>7</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid and invalid code in editor page from Types of Linked List page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>10</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Deletion Page", "Test Linked List page in ds_algo portal"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user tests sign in functionality with empty password textbox", "Test ds_algo portal sign in page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Insertion Page", "Test Linked List page in ds_algo portal"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigates to registration page", "Test DS Algo portal home page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Applications of Array Page", "Test Arrays page in ds_algo portal"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests registration link on sign in page", "Test ds_algo portal sign in page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Types of Linked List Page", "Test Linked List page in ds_algo portal"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should get error message for all fields empty below username textbox", "Test Automation DS Algo register page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Arrays in Python Page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Arrays Using List page", "Test Arrays page in ds_algo portal"</td>
 <td></td>
 <td>5</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests registration link on sign in page", "Test ds_algo portal sign in page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Implementation page", "Stack"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Graph page", "graph"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Applications of Array page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigates to registration page", "Test DS Algo portal home page"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Graph page", "graph"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid and invalid code in editor page from Insertion page", "Test Linked List page in ds_algo portal"</td>
 <td></td>
-<td>9</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>11</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Graph Representations page", "graph"</td>
-<td></td>
-<td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
-<tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying signout link in home page", "graph"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Basic Operations In List Page", "Test Arrays page in ds_algo portal"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigates to register page", "Test Automation DS Algo register page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Basic Operations in List page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>2</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "Queue"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Creating Linked List page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>7</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid and invalid code in editor page from Deletion page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>11</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks login functionality", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigates to ds_algo portal home page", "Test DS Algo portal home page"</td>
 <td></td>
 <td>3</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Arrays Using List", "Test Arrays page in ds_algo portal"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Applications of Array page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>2</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to graph page and click on Graph Representations link", "graph"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests registration link on sign in page", "Test ds_algo portal sign in page"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
-<tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User registers with invalid username and password", "Test Automation DS Algo register page"</td>
-<td></td>
-<td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
-<tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for valid username and password", "Test ds_algo portal sign in page"</td>
-<td></td>
-<td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
-<tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user tests sign in functionality with empty username textbox", "Test ds_algo portal sign in page"</td>
-<td></td>
-<td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
-<tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
 <td></td>
 <td>1</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Graph page", "graph"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Traversal Page", "Test Linked List page in ds_algo portal"</td>
 <td></td>
-<td>9</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for Graph Representations page", "graph"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "Stack"</td>
 <td></td>
-<td>9</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid and invalid code in editor page from Traversal page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>10</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User registers with invalid username and password", "Test Automation DS Algo register page"</td>
 <td></td>
 <td>1</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigates to ds_algo portal home page", "Test DS Algo portal home page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for valid username and password", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigates to register page", "Test Automation DS Algo register page"</td>
 <td></td>
 <td>3</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks login functionality", "Test DS Algo portal home page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Practice questions Squares of a Sorted Array page and run code", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user tests sign in functionality with empty password textbox", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to terminologies page", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should get error message below confirm password textbox", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Traversal Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
 <td></td>
 <td>1</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should get error message below confirm password textbox", "Test Automation DS Algo register page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user navigates to ds algo home page", "Test Automation DS Algo register page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should get error message for all fields empty below username textbox", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down entries", "Test DS Algo portal home page"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
-<td></td>
-<td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
-<tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for Graph Representations page", "graph"</td>
-<td></td>
-<td>9</td>
-<td>runner.test_runner@49b2a47d</td></tr>
-<tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
-<td></td>
-<td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
-<tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
 <td></td>
 <td>1</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests sign in link on sign in page", "Test ds_algo portal sign in page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to graph representations page and click on Practice Questions", "graph"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigates to sign in page", "Test DS Algo portal home page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Insertion Page", "Test Linked List page in ds_algo portal"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down entries", "Test DS Algo portal home page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Applications of Array Page", "Test Arrays page in ds_algo portal"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "graph"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Introduction page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>4</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "graph"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User registers successfully", "Test Automation DS Algo register page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in Editor for time complexity page", "graph"</td>
+<td></td>
+<td>7</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "graph"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should get error message below password textbox", "Test Automation DS Algo register page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to overview of trees page", "graph"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 <tr>
-<td title='runner.test_runner.runScenario()'><b>runScenario</b><br>Test class: runner.test_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Graph Representations page", "graph"</td>
 <td></td>
 <td>0</td>
-<td>runner.test_runner@49b2a47d</td></tr>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Creating Linked List Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user navigates to sign in page", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Practice questions Find Numbers With Even Number of Digits page and run code", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Introduction Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests sign in link on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to practice questions page", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to stack page and click on Implementation link", "Stack"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Creating Linked List Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Implement Linked List in Python Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid and invalid code in editor page from Implement Linked List in Python page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>11</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should get error message below password textbox", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Arrays Using List Page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code from Implementation using collections.deque  page", "Queue"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying signout link in home page", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to time complexity page", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Arrays in Python", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Implement Linked List in Python Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Arrays in Python page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to queue page and click on  link Implementation using collections.deque", "Queue"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Creating Linked List page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>11</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for time complexity page", "graph"</td>
+<td></td>
+<td>13</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run invalid code in editor page from Basic Operations in List page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Practice questions Search the Array page and run code", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality witout sign in", "Test DS Algo portal home page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user should be directed to editor page with run button to test python code", "graph"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Editor for stack page", "Stack"</td>
+<td></td>
+<td>7</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Practice Questins Page from Deletion Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Queue page", "Queue"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Graph page", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to practice questions page", "graph"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user navigates to ds algo home page", "Test Automation DS Algo register page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks for invalid username and password", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Practice questions Max Consecutive Ones page and run code", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests registration link on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Types of Linked List Page", "Test Linked List page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests Get Started button after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Basic Operations in List Page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>0</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tests drop down list functionality on sign in page", "Test ds_algo portal sign in page"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to Run valid code in editor page from Arrays Using List page", "Test Arrays page in ds_algo portal"</td>
+<td></td>
+<td>2</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user checks drop down functionality after loggin in", "Home page after loggin in"</td>
+<td></td>
+<td>1</td>
+<td>Runner.TestRunner@49b2a47d</td></tr>
 </table><p>
 </body>
 </html>

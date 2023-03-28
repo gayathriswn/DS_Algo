@@ -61,6 +61,7 @@ Feature: Test ds_algo portal sign in page
     And user clicks on login button
     Then used should be signed in and directed to homepage
     
+ 
   
 
   

@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
@@ -18,21 +19,27 @@ public class Home {
 	
     public static WebDriver driver;
     public static ChromeOptions options;
-    
-    //String url = "https://dsportalapp.herokuapp.com/";
-    
+      
     By get_started_button = By.xpath("//button[text()='Get Started']");
 	By homepage_get_started_btn = By.xpath("//a[@href='data-structures-introduction']");
 	By homepage_drop_down = By.xpath("//a[text()='Data Structures']");
 	
-	@Given("the user opens DS_Algo portal link")
-	public void the_user_opens_ds_algo_portal_link() {
-		//Base.initializeOption();
+	public void chromeDriverOptions() {
 		options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
-		
-	    driver = new ChromeDriver(options);
-    
+		driver = new ChromeDriver(options);
+	}
+	
+	public void firefoxDriverOptions()
+	{
+		driver = new FirefoxDriver();
+	}
+	
+	
+	@Given("the user opens DS_Algo portal link")
+	public void the_user_opens_ds_algo_portal_link() {
+		chromeDriverOptions();
+		//firefoxDriverOptions();
 	    driver.get(Base.url);	
 	    driver.manage().window().maximize();
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

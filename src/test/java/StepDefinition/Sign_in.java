@@ -153,5 +153,7 @@ public class Sign_in{
     	Allure.addAttachment("Page Screenshot", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
    
     }
+    
+    
 
 }
