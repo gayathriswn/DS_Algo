@@ -3,6 +3,8 @@ package StepDefinition;
 import java.time.Duration;
 import java.util.List;
 
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,6 +21,8 @@ public class Home {
 	
     public static WebDriver driver;
     public static ChromeOptions options;
+
+
       
     By get_started_button = By.xpath("//button[text()='Get Started']");
 	By homepage_get_started_btn = By.xpath("//a[@href='data-structures-introduction']");
@@ -28,11 +32,13 @@ public class Home {
 		options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
 		driver = new ChromeDriver(options);
+		Base.LOGGER.info("Chrome Browser opened");
 	}
 	
 	public void firefoxDriverOptions()
 	{
 		driver = new FirefoxDriver();
+		Base.LOGGER.info("Firefox Browser opened");
 	}
 	
 	
@@ -43,19 +49,22 @@ public class Home {
 	    driver.get(Base.url);	
 	    driver.manage().window().maximize();
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	    Base.LOGGER.info("DS Portal link Opened");
 	}
 
 	@When("The user clicks the Get Started button")
 	public void the_user_clicks_the_button() {
 
-		driver.findElement(get_started_button).click();	
+		driver.findElement(get_started_button).click();
+		Base.LOGGER.info("Get started Button clicked");
 	}
 
 	@Then("The user navigate to home page")
 	public void the_user_navigate_to_home_page() 
 	{
 		String current_url = driver.getCurrentUrl();
-		Assert.assertEquals(Base.homepageUrl, current_url); 
+		Assert.assertEquals(Base.homepageUrl, current_url);
+		Base.LOGGER.info("User navigates to Homepage");
     }
 	
     @Given("the user is on DS_Algo home page")
@@ -63,7 +72,8 @@ public class Home {
     {
     	driver.get(Base.homepageUrl);	
 	    String verify_url = driver.getCurrentUrl();
-	    Assert.assertEquals(Base.homepageUrl, verify_url);   
+	    Assert.assertEquals(Base.homepageUrl, verify_url);
+	    Base.LOGGER.info("DsAlgo Home page");
 	    
     }
 
@@ -71,6 +81,7 @@ public class Home {
     public void the_user_clicks_on_get_started_button()
     {
     	driver.findElement(homepage_get_started_btn).click();
+    	Base.LOGGER.info("User clicks on get Started Button");
     }    
     
     @Then("error message should be displayed")
@@ -80,6 +91,7 @@ public class Home {
     	WebElement m = driver.findElement(By.xpath("//div[@class='alert alert-primary']"));
     	String alert = m.getText();
     	Assert.assertEquals(err_msg, alert);
+    	Base.LOGGER.info("Error Messge is displayed");
     }
     
 
@@ -99,6 +111,7 @@ public class Home {
             System.out.println(options);
          }
          Assert.assertEquals(size, 6);
+         Base.LOGGER.info("Dropdown Options are counted");
     }
     
     
@@ -113,7 +126,8 @@ public class Home {
     	String current_url = driver.getCurrentUrl();
 	   
 	   // driver.get(current_url);	
-	    Assert.assertEquals(current_url, Base.registerUrl); 
+	    Assert.assertEquals(current_url, Base.registerUrl);
+	    Base.LOGGER.info("User is on DS algo registration page");
     }
     
     @When("the user click on sign in link")
@@ -128,12 +142,12 @@ public class Home {
     	String current_url = driver.getCurrentUrl();
 	    driver.get(current_url);	
 	    Assert.assertEquals(current_url, Base.signinUrl);   
-	    
+	    Base.LOGGER.info("User is on Sign in Page");
     }
     
     @When("the user click on {string} from drop down link")
     public void the_user_click_on_from_drop_down_link(String string) {
-    	System.out.println(string); 
+    	Base.LOGGER.info("DropDown Option "+string+" is Selected");
 		driver.findElement(By.xpath("//a[text()='Data Structures']")).click();
 		
 		WebElement options = driver.findElement(By.xpath("//a[text()='"+string+"']"));

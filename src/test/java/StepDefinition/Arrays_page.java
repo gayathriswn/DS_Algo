@@ -118,7 +118,6 @@ public class Arrays_page {
 	
 	@Then("user is presented with error message")
 	public void user_is_presented_with_error_message() throws InterruptedException {
-	  
 	   	baseObj.alertScreenShot();
 		Thread.sleep(3000);
        	driver.switchTo().alert().accept();

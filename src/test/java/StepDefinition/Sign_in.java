@@ -60,8 +60,9 @@ public class Sign_in{
 	}
 
 	@Then("textbox should display an error message")
-	public void textbox_should_display_an_error_message() 
+	public void textbox_should_display_an_error_message() throws InterruptedException 
 	{
+		Thread.sleep(500);
 		//adding screenshot to allure report
 		Allure.addAttachment("Page Screenshot", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
 	}

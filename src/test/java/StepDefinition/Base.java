@@ -17,6 +17,8 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -37,10 +39,12 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.qameta.allure.Allure;
+import org.apache.log4j.*;
 
 public class Base {
 	   
 	public static WebDriver driver = Home.driver;    
+    public static Logger LOGGER = LogManager.getLogger("Base.class");
     public static String url = "https://dsportalapp.herokuapp.com/";
     public static String homepageUrl = "https://dsportalapp.herokuapp.com/home";
     public static String signinUrl = "https://dsportalapp.herokuapp.com/login";
