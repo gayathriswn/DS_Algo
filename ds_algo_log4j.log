@@ -189,3 +189,43 @@
 2023-04-03 22:30:07,380  INFO [main] class:150 - DropDown Option Graph is Selected
 2023-04-03 22:35:33,459  INFO [main] class:76 - DsAlgo Home page
 2023-04-03 22:35:33,887  INFO [main] class:67 - User navigates to Homepage
+2023-04-03 23:06:55,497  INFO [main] class:35 - Chrome Browser opened
+2023-04-03 23:06:56,143  INFO [main] class:52 - DS Portal link Opened
+2023-04-03 23:06:56,527  INFO [main] class:59 - Get started Button clicked
+2023-04-03 23:06:56,541  INFO [main] class:67 - User navigates to Homepage
+2023-04-03 23:06:56,860  INFO [main] class:76 - DsAlgo Home page
+2023-04-03 23:06:57,182  INFO [main] class:84 - User clicks on get Started Button
+2023-04-03 23:06:57,220  INFO [main] class:94 - Error Messge is displayed
+2023-04-03 23:06:57,380  INFO [main] class:76 - DsAlgo Home page
+2023-04-03 23:06:57,578  INFO [main] class:114 - Dropdown Options are counted
+2023-04-03 23:06:57,742  INFO [main] class:76 - DsAlgo Home page
+2023-04-03 23:06:57,742  INFO [main] class:150 - DropDown Option Arrays is Selected
+2023-04-03 23:06:58,138  INFO [main] class:94 - Error Messge is displayed
+2023-04-03 23:06:58,324  INFO [main] class:76 - DsAlgo Home page
+2023-04-03 23:06:58,325  INFO [main] class:150 - DropDown Option Linked List is Selected
+2023-04-03 23:06:58,706  INFO [main] class:94 - Error Messge is displayed
+2023-04-03 23:06:58,871  INFO [main] class:76 - DsAlgo Home page
+2023-04-03 23:06:58,874  INFO [main] class:150 - DropDown Option Stack is Selected
+2023-04-03 23:06:59,259  INFO [main] class:94 - Error Messge is displayed
+2023-04-03 23:06:59,425  INFO [main] class:76 - DsAlgo Home page
+2023-04-03 23:06:59,426  INFO [main] class:150 - DropDown Option Queue is Selected
+2023-04-03 23:06:59,810  INFO [main] class:94 - Error Messge is displayed
+2023-04-03 23:06:59,968  INFO [main] class:76 - DsAlgo Home page
+2023-04-03 23:06:59,969  INFO [main] class:150 - DropDown Option Tree is Selected
+2023-04-03 23:07:00,356  INFO [main] class:94 - Error Messge is displayed
+2023-04-03 23:07:00,497  INFO [main] class:76 - DsAlgo Home page
+2023-04-03 23:07:00,498  INFO [main] class:150 - DropDown Option Graph is Selected
+2023-04-03 23:07:00,866  INFO [main] class:94 - Error Messge is displayed
+2023-04-03 23:07:01,038  INFO [main] class:76 - DsAlgo Home page
+2023-04-03 23:07:01,379  INFO [main] class:145 - User is on Sign in Page
+2023-04-03 23:07:01,584  INFO [main] class:76 - DsAlgo Home page
+2023-04-03 23:07:01,798  INFO [main] class:130 - User is on DS algo registration page
+2023-04-03 23:07:18,645  INFO [main] class:145 - User is on Sign in Page
+2023-04-03 23:07:28,955  INFO [main] class:150 - DropDown Option Arrays is Selected
+2023-04-03 23:07:30,448  INFO [main] class:150 - DropDown Option Linked List is Selected
+2023-04-03 23:07:31,975  INFO [main] class:150 - DropDown Option Stack is Selected
+2023-04-03 23:07:33,439  INFO [main] class:150 - DropDown Option Queue is Selected
+2023-04-03 23:07:34,895  INFO [main] class:150 - DropDown Option Tree is Selected
+2023-04-03 23:07:36,410  INFO [main] class:150 - DropDown Option Graph is Selected
+2023-04-03 23:13:49,729  INFO [main] class:76 - DsAlgo Home page
+2023-04-03 23:13:50,178  INFO [main] class:67 - User navigates to Homepage
