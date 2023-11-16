@@ -44,9 +44,10 @@ public class Home {
 	
 	@Given("the user opens DS_Algo portal link")
 	public void the_user_opens_ds_algo_portal_link() {
-		chromeDriverOptions();
+		//chromeDriverOptions();
 		//firefoxDriverOptions();
-	    driver.get(Base.url);	
+	    driver = new ChromeDriver();
+		driver.get(Base.url);	
 	    driver.manage().window().maximize();
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	    Base.LOGGER.info("DS Portal link Opened");

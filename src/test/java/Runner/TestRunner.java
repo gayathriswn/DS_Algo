@@ -14,6 +14,7 @@ import io.cucumber.testng.CucumberOptions;
 		plugin = {"pretty", "html:target/ds_algo.html"},
 				//reporting purpose
 		monochrome=false,  //console output color
+
 		tags = "", //tags from feature file
 	    features = {"src/test/resources/features"},
 		    //location of feature files
